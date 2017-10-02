@@ -1,0 +1,20 @@
+{
+  "name": "storybooks",
+  "version": "1.0.0",
+  "description": "App to share public or write private stories",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Nicky Meuleman",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.8.0",
+    "express": "^4.16.1",
+    "mongoose": "^4.11.14"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.0.1",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
