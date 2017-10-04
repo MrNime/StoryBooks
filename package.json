@@ -9,8 +9,10 @@
   "author": "Nicky Meuleman",
   "license": "MIT",
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "eslint": "^4.8.0",
     "express": "^4.16.1",
+    "express-session": "^1.15.6",
     "mongoose": "^4.11.14",
     "passport": "^0.4.0",
     "passport-facebook": "^2.1.1"

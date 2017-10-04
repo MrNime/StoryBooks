@@ -4,6 +4,7 @@
         "semi": [1, "always"],
         "indent": ["error", 4],
         "linebreak-style": ["warn", "windows"],
-        "import/newline-after-import": [0, { "count": 1 }]
+        "import/newline-after-import": [0, { "count": 1 }],
+        "comma-dangle": ["error", "only-multiline"]
     }   
 }
