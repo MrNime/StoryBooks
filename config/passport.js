@@ -8,7 +8,7 @@ module.exports = (passport) => {
         clientSecret: keys.FacebookClientSecret,
         callbackURL: '/auth/facebook/callback',
         proxy: true,
-    }, (accessToken, refreshToken, profile, cb) => {
+    }, (accessToken, refreshToken, profile, done) => {
         console.log(accessToken);
         console.log(profile);
     }));
