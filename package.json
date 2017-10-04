@@ -11,7 +11,9 @@
   "dependencies": {
     "eslint": "^4.8.0",
     "express": "^4.16.1",
-    "mongoose": "^4.11.14"
+    "mongoose": "^4.11.14",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.0.1",

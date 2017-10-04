@@ -2,7 +2,8 @@
     "extends": "airbnb-base",
     "rules": {
         "semi": [1, "always"],
-        "indent": ["error", 4]
-    }
-    
+        "indent": ["error", 4],
+        "linebreak-style": ["warn", "windows"],
+        "import/newline-after-import": [0, { "count": 1 }]
+    }   
 }
