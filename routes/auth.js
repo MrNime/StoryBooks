@@ -20,6 +20,7 @@ router.get('/verify', (req, res) => {
     } else {
         console.log('not authenticated');
     }
+    res.send(JSON.stringify(process.env.NODE_ENV));
 });
 
 router.get('/logout', (req, res) => {
