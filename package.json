@@ -9,6 +9,7 @@
   "author": "Nicky Meuleman",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "eslint": "^4.8.0",
     "express": "^4.16.1",
