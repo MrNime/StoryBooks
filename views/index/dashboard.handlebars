@@ -24,7 +24,8 @@
                 <a href="/stories/edit/{{id}}" class="btn left-align">
                     <i class="fa fa-pencil left"></i> Edit</a>
 
-                <form action="/stories/{{id}}" id="delete-form" method="post">
+                <form action="/stories/{{id}}?_method=DELETE" id="delete-form" method="post">
+                    <input type="hidden" name="_method" value="DELETE">
                     <button type="submit"class="btn red">
                         <i class="fa fa-remove left"></i> Delete</button>
                 </form>
