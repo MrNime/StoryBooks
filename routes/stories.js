@@ -34,16 +34,27 @@ router.get('/add', ensureAuthenticated, (req, res) => {
     res.render('stories/add');
 });
 
+// Edit Story form
+router.get('/edit/:id', ensureAuthenticated, (req, res) => {
+    Story.findOne({
+        _id: req.params.id
+    })
+        .then((story) => {
+            res.render('stories/edit', {
+                story
+            });
+        });
+});
+
 // Process add Story
 router.post('/', (req, res) => {
-    let allowComments;
-    req.body.allowComments ? allowComments = true : allowComments = false;
+    const allowComments = req.body.allowComments !== undefined;
 
     const newStory = {
         title: req.body.title,
         body: req.body.body,
         status: req.body.status,
-        allowComments: allowComments,
+        allowComments,
         user: req.user.id
     };
 
