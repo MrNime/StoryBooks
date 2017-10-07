@@ -1,15 +1,20 @@
-<h1>Welcome</h1>
-<p>Welcome to StoryBooks 1.0.0</p>
-<p>
-    Post stories from the best and worst 
-    of your life and choose for them 
-    to be read by the world or 
-    completely private as your
-    own personal diary
-</p>
+<div class="row">
+    <h1>Welcome</h1>
+    <p>Welcome to StorySave</p>
+    <img src="/img/logo.png" class="responsive-img">
+    <p>
+        Post stories from the best and worst 
+        of your life and choose for them 
+        to be read by the world or 
+        completely private as your
+        own personal diary
+    </p>
+</div>
 {{#if user}}
 {{else}}
-<a href="/auth/facebook" class="btn blue darken-3">
-    <i class="fa fa-facebook left"></i> Login with Facebook
-</a>
+    <div class="row">
+        <a href="/auth/facebook" class="btn blue darken-3">
+            <i class="fa fa-facebook left"></i> Login with Facebook
+        </a>
+    </div>
 {{/if}}
