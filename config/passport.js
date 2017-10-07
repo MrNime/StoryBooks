@@ -11,7 +11,7 @@ module.exports = (passport) => {
         clientSecret: keys.FacebookClientSecret,
         callbackURL: '/auth/facebook/callback',
         profileFields: ['id', 'displayName', 'first_name', 'last_name', 'picture.width(200).height(200)', 'email'],
-        proxy: true,
+        // proxy: true,
     }, (accessToken, refreshToken, profile, done) => {
         // console.log(accessToken);
         // console.log(profile);
@@ -35,7 +35,7 @@ module.exports = (passport) => {
                 // Create user
                 new User(newUser)
                     .save()
-                    .then(foundUser => done(null, foundUser));
+                    .then(createdUser => done(null, createdUser));
             }
         });
     }));
