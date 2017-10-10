@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
         .sort({ date: 'desc' })
         .then((stories) => {
             res.render('stories/index', {
-                stories
+                stories,
+                css: ['storyIndex.css']
             });
         });
 });
