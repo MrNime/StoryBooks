@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         .then((stories) => {
             res.render('stories/index', {
                 stories,
-                css: ['storyIndex.css']
+                css: ['storyList.css']
             });
         });
 });
@@ -48,7 +48,8 @@ router.get('/user/:userId', (req, res) => {
         .populate('user')
         .then((stories) => {
             res.render('stories/index', {
-                stories
+                stories,
+                css: ['storyList.css']
             });
         });
 });
@@ -61,7 +62,8 @@ router.get('/my', ensureAuthenticated, (req, res) => {
         .populate('user')
         .then((stories) => {
             res.render('stories/index', {
-                stories
+                stories,
+                css: ['storyList.css']
             });
         });
 });
