@@ -3,7 +3,7 @@
 </div>
 <div class="row">
     {{#each stories}}
-        <div class="col s12 m4">
+        <div class="col s12 m6 l4">
             <div class="card hoverable">
                 <div class="card-image">
                     {{#if user}}
@@ -12,7 +12,7 @@
                 </div>
                 <div class="card-content center-align">
                     <h5>{{title}}</h5>
-                    <p class="story-text">{{{truncate (stripTags body) 100}}}</p>
+                    <p class="story-text">{{{truncate (stripTags body) 150}}}</p>
                     <br>
                     <div class="chip">
                         <img src="{{user.image}}">
